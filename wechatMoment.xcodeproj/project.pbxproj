@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		84079996258109B500627FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84079994258109B500627FE1 /* LaunchScreen.storyboard */; };
 		840799A1258109B500627FE1 /* wechatMomentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840799A0258109B500627FE1 /* wechatMomentTests.swift */; };
 		840799AC258109B500627FE1 /* wechatMomentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840799AB258109B500627FE1 /* wechatMomentUITests.swift */; };
+		840799DA2581111F00627FE1 /* NQMomentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840799D92581111F00627FE1 /* NQMomentController.swift */; };
+		840799E2258111F800627FE1 /* NQUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840799E1258111F800627FE1 /* NQUserInfoModel.swift */; };
 		DF701AB58F5ADFC9EB416314 /* Pods_wechatMoment_wechatMomentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4060CC127879D7BF9F2FB278 /* Pods_wechatMoment_wechatMomentUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +60,8 @@
 		840799A7258109B500627FE1 /* wechatMomentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wechatMomentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840799AB258109B500627FE1 /* wechatMomentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wechatMomentUITests.swift; sourceTree = "<group>"; };
 		840799AD258109B500627FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840799D92581111F00627FE1 /* NQMomentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQMomentController.swift; sourceTree = "<group>"; };
+		840799E1258111F800627FE1 /* NQUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQUserInfoModel.swift; sourceTree = "<group>"; };
 		B8956DC68B7D15E05D1BBACB /* Pods-wechatMomentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wechatMomentTests.debug.xcconfig"; path = "Target Support Files/Pods-wechatMomentTests/Pods-wechatMomentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C7B09764902434AD230C5511 /* Pods-wechatMomentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wechatMomentTests.release.xcconfig"; path = "Target Support Files/Pods-wechatMomentTests/Pods-wechatMomentTests.release.xcconfig"; sourceTree = "<group>"; };
 		E2AC5B18067FB8CEC2279599 /* Pods_wechatMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wechatMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +105,6 @@
 				B8956DC68B7D15E05D1BBACB /* Pods-wechatMomentTests.debug.xcconfig */,
 				C7B09764902434AD230C5511 /* Pods-wechatMomentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +143,8 @@
 		84079988258109B100627FE1 /* wechatMoment */ = {
 			isa = PBXGroup;
 			children = (
+				840799DE2581116F00627FE1 /* Foundation */,
+				840799D4258110C700627FE1 /* Modules */,
 				84079989258109B100627FE1 /* AppDelegate.swift */,
 				8407998B258109B100627FE1 /* SceneDelegate.swift */,
 				8407998D258109B100627FE1 /* ViewController.swift */,
@@ -167,6 +172,70 @@
 				840799AD258109B500627FE1 /* Info.plist */,
 			);
 			path = wechatMomentUITests;
+			sourceTree = "<group>";
+		};
+		840799D4258110C700627FE1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				840799D5258110D100627FE1 /* Moment */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		840799D5258110D100627FE1 /* Moment */ = {
+			isa = PBXGroup;
+			children = (
+				840799D8258110FB00627FE1 /* Views */,
+				840799D7258110E800627FE1 /* Models */,
+				840799D6258110DE00627FE1 /* Controllers */,
+			);
+			path = Moment;
+			sourceTree = "<group>";
+		};
+		840799D6258110DE00627FE1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				840799D92581111F00627FE1 /* NQMomentController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		840799D7258110E800627FE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				840799E1258111F800627FE1 /* NQUserInfoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		840799D8258110FB00627FE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		840799DE2581116F00627FE1 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				840799E02581118300627FE1 /* ImageManager */,
+				840799DF2581117A00627FE1 /* Network */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		840799DF2581117A00627FE1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		840799E02581118300627FE1 /* ImageManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,7 +477,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8407998E258109B100627FE1 /* ViewController.swift in Sources */,
+				840799E2258111F800627FE1 /* NQUserInfoModel.swift in Sources */,
 				8407998A258109B100627FE1 /* AppDelegate.swift in Sources */,
+				840799DA2581111F00627FE1 /* NQMomentController.swift in Sources */,
 				8407998C258109B100627FE1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
