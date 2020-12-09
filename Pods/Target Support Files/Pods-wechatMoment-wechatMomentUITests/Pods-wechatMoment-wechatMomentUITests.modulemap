@@ -1,0 +1,6 @@
+framework module Pods_wechatMoment_wechatMomentUITests {
+  umbrella header "Pods-wechatMoment-wechatMomentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
